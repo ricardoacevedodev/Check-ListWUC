@@ -1,0 +1,72 @@
+<%= form_with(model: list, local: true) do |form| %>
+  <% if list.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(list.errors.count, "error") %> prohibited this list from being saved:</h2>
+
+      <ul>
+      <% list.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Unit %>
+    <%= form.text_field :Unit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Plataform %>
+    <%= form.text_field :Plataform %>
+  </div>
+
+  <div class="field">
+    <%= form.label :PhotoRecived %>
+    <%= form.check_box :PhotoRecived %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Scanning %>
+    <%= form.check_box :Scanning %>
+  </div>
+
+  <div class="field">
+    <%= form.label :InitialSheetUpdate %>
+    <%= form.check_box :InitialSheetUpdate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :PerformanceTest %>
+    <%= form.check_box :PerformanceTest %>
+  </div>
+
+  <div class="field">
+    <%= form.label :FinalLogSheetUpdate %>
+    <%= form.check_box :FinalLogSheetUpdate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :QRD %>
+    <%= form.check_box :QRD %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ABInternalControl %>
+    <%= form.check_box :ABInternalControl %>
+  </div>
+
+  <div class="field">
+    <%= form.label :TearDownFormat %>
+    <%= form.check_box :TearDownFormat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :EWR %>
+    <%= form.text_field :EWR %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

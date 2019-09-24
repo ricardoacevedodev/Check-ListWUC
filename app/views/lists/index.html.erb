@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Unit</th>
+      <th>Plataform</th>
+      <th>Photorecived</th>
+      <th>Scanning</th>
+      <th>Initialsheetupdate</th>
+      <th>Performancetest</th>
+      <th>Finallogsheetupdate</th>
+      <th>Qrd</th>
+      <th>Abinternalcontrol</th>
+      <th>Teardownformat</th>
+      <th>Ewr</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lists.each do |list| %>
+      <tr>
+        <td><%= list.Unit %></td>
+        <td><%= list.Plataform %></td>
+        <td><%= list.PhotoRecived %></td>
+        <td><%= list.Scanning %></td>
+        <td><%= list.InitialSheetUpdate %></td>
+        <td><%= list.PerformanceTest %></td>
+        <td><%= list.FinalLogSheetUpdate %></td>
+        <td><%= list.QRD %></td>
+        <td><%= list.ABInternalControl %></td>
+        <td><%= list.TearDownFormat %></td>
+        <td><%= list.EWR %></td>
+        <td><%= link_to 'Show', list %></td>
+        <td><%= link_to 'Edit', edit_list_path(list) %></td>
+        <td><%= link_to 'Destroy', list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New List', new_list_path %>

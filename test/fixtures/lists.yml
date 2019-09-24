@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Unit: MyString
+  Plataform: MyString
+  PhotoRecived: false
+  Scanning: false
+  InitialSheetUpdate: false
+  PerformanceTest: false
+  FinalLogSheetUpdate: false
+  QRD: false
+  ABInternalControl: false
+  TearDownFormat: false
+  EWR: MyString
+
+two:
+  Unit: MyString
+  Plataform: MyString
+  PhotoRecived: false
+  Scanning: false
+  InitialSheetUpdate: false
+  PerformanceTest: false
+  FinalLogSheetUpdate: false
+  QRD: false
+  ABInternalControl: false
+  TearDownFormat: false
+  EWR: MyString
