@@ -1,21 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Lists</h1>
+<h1>CHECK LIST WARRANTY</h1>
 
 <table>
   <thead>
     <tr>
       <th>Unit</th>
       <th>Plataform</th>
-      <th>Photorecived</th>
+      <th>Photo recived</th>
       <th>Scanning</th>
-      <th>Initialsheetupdate</th>
-      <th>Performancetest</th>
-      <th>Finallogsheetupdate</th>
-      <th>Qrd</th>
-      <th>Abinternalcontrol</th>
-      <th>Teardownformat</th>
-      <th>Ewr</th>
+      <th>Initial sheet update</th>
+      <th>Performance test</th>
+      <th>Final log sheet update</th>
+      <th>QRD</th>
+      <th>AB internal control</th>
+      <th>Teardown format</th>
+      <th>EWR</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -34,9 +34,9 @@
         <td><%= list.ABInternalControl %></td>
         <td><%= list.TearDownFormat %></td>
         <td><%= list.EWR %></td>
-        <td><%= link_to 'Show', list %></td>
-        <td><%= link_to 'Edit', edit_list_path(list) %></td>
-        <td><%= link_to 'Destroy', list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', list %></td>
+        <td><%= link_to 'Editar', edit_list_path(list) %></td>
+        <td><%= link_to 'Borrar', list, method: :delete, data: { confirm: 'Estas seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -44,4 +44,4 @@
 
 <br>
 
-<%= link_to 'New List', new_list_path %>
+<%= link_to 'Nuevo Registro', new_list_path %>
